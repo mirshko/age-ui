@@ -1,6 +1,10 @@
-<nav
-  class="isolate flex divide-x divide-gray-200 rounded-lg shadow fixed bottom-5 inset-x-5"
-  aria-label="Tabs"
+<div
+  class="fixed bottom-0 inset-x-0 px-5 pb-5 from-transparent to-gray-100 bg-gradient-to-b"
 >
-  <slot />
-</nav>
+  <nav
+    class="isolate flex divide-x divide-gray-200 rounded-lg shadow"
+    aria-label="Tabs"
+  >
+    <slot />
+  </nav>
+</div>
