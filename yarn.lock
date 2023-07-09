@@ -202,7 +202,7 @@
   dependencies:
     mini-svg-data-uri "^1.2.3"
 
-"@tauri-apps/api@^1.4.0":
+"@tauri-apps/api@^1.2.0", "@tauri-apps/api@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@tauri-apps/api/-/api-1.4.0.tgz#b4013ca3d17b853f7df29fe14079ebb4d52dbffa"
   integrity sha512-Jd6HPoTM1PZSFIzq7FB8VmMu3qSSyo/3lSwLpoapW+lQ41CL5Dow2KryLg+gyazA/58DRWI9vu/XpEeHK4uMdw==
@@ -720,6 +720,11 @@ nanoid@^3.3.6:
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.6.tgz#443380c856d6e9f9824267d960b4236ad583ea4c"
   integrity sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==
 
+nanoid@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-4.0.2.tgz#140b3c5003959adbebf521c170f282c5e7f9fb9e"
+  integrity sha512-7ZtY5KTCNheRGfEFxnedV5zFiORN1+Y1N6zvPTnHQd8ENUvfaDBeuJDZb2bN/oXwXxu3qkTXDzy57W5vAmDTBw==
+
 node-releases@^2.0.12:
   version "2.0.13"
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-2.0.13.tgz#d5ed1627c23e3461e819b02e57b75e4899b1c81d"
@@ -1021,6 +1026,12 @@ tailwindcss@^3.3.2:
     postcss-value-parser "^4.2.0"
     resolve "^1.22.2"
     sucrase "^3.32.0"
+
+"tauri-plugin-store-api@https://github.com/tauri-apps/tauri-plugin-store#v1":
+  version "0.0.0"
+  resolved "https://github.com/tauri-apps/tauri-plugin-store#96e2eb3971c981ece96f0a9e47dad14a2d1d2539"
+  dependencies:
+    "@tauri-apps/api" "^1.2.0"
 
 thenify-all@^1.0.0:
   version "1.6.0"
