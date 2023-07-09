@@ -12,7 +12,7 @@
 
 <div>
   <form on:submit|preventDefault={greet}>
-    <div class="flex gap-2 max-w-xs">
+    <div class="flex gap-2">
       <input
         id="greet-input"
         placeholder="Enter a name..."
