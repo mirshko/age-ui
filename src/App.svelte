@@ -2,7 +2,7 @@
   import Greet from "./lib/Greet.svelte";
 </script>
 
-<main class="p-5 pt-10">
+<main class="p-5">
   <Greet />
 
   <nav
