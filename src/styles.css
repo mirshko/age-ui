@@ -13,3 +13,41 @@
 html {
   @apply bg-gray-100;
 }
+
+dialog {
+  width: 100%;
+  max-width: 24rem;
+  border-radius: 0.2em;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+dialog::backdrop {
+  @apply bg-gray-500/75 transition-opacity;
+}
+
+dialog[open] {
+  animation: modalEnter 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes modalEnter {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+dialog[open]::backdrop {
+  animation: backdropEnter 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes backdropEnter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
