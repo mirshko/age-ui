@@ -18,6 +18,7 @@
         "open": true
       },
       "dialog": {
+        "message": true,
         "confirm": true
       }
     },
