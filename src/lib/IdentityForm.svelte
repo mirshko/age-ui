@@ -1,6 +1,7 @@
 <script lang="ts">
   import { store } from "./store";
   import { nanoid } from "nanoid";
+  import { revalidate } from "sswr";
 
   let recipient = "";
 
@@ -24,6 +25,8 @@
     await store.set(nanoid(), recipient);
 
     await store.save();
+
+    await revalidate("identities");
   }
 </script>
 
