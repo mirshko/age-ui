@@ -2,6 +2,6 @@
   import Greet from "./lib/Greet.svelte";
 </script>
 
-<main>
+<main class="p-8">
   <Greet />
 </main>
