@@ -11,6 +11,7 @@
     "tauri": "tauri"
   },
   "dependencies": {
+    "@melt-ui/svelte": "^0.19.0",
     "@tauri-apps/api": "^1.4.0",
     "nanoid": "^4.0.2",
     "sswr": "^2.0.0",
