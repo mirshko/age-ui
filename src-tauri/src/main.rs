@@ -2,13 +2,12 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 use age::{
-    armor::{ArmoredReader, ArmoredWriter, Format},
-    x25519, Decryptor, Encryptor,
+    armor::{ArmoredWriter, Format},
+    x25519, Encryptor,
 };
-use secrecy::{ExposeSecret, Secret};
+use secrecy::{ExposeSecret};
 use std::{
-    io::{Read, Write},
-    iter, vec,
+    io::{Write}, vec,
 };
 
 #[tauri::command]
