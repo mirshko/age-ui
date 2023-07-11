@@ -4,8 +4,14 @@
   import Encrypt from "./screens/Encrypt.svelte";
   import Identities from "./screens/Identities.svelte";
 
+  const Tabs = {
+    Identities: "Identities",
+    Encrypt: "Encrypt",
+    Decrypt: "Decrypt",
+  };
+
   const { root, list, content, trigger } = createTabs({
-    value: "Identities",
+    value: Tabs.Identities,
   });
 </script>
 
@@ -18,32 +24,32 @@
         class="isolate flex divide-x divide-gray-200 rounded-lg shadow"
         {...$list}
       >
-        <button {...$trigger("Identities")} use:trigger class="trigger">
+        <button {...$trigger(Tabs.Identities)} use:trigger class="trigger">
           Identities
           <span aria-hidden="true" class="trigger-indicator" />
         </button>
 
-        <button {...$trigger("Encrypt")} use:trigger class="trigger">
+        <button {...$trigger(Tabs.Encrypt)} use:trigger class="trigger">
           Encrypt
           <span aria-hidden="true" class="trigger-indicator" />
         </button>
 
-        <button {...$trigger("Decrypt")} use:trigger class="trigger">
+        <button {...$trigger(Tabs.Decrypt)} use:trigger class="trigger">
           Decrypt
           <span aria-hidden="true" class="trigger-indicator" />
         </button>
       </nav>
     </div>
 
-    <div class="focus:outline-none" {...$content("Identities")}>
+    <div class="focus:outline-none" {...$content(Tabs.Identities)}>
       <Identities />
     </div>
 
-    <div class="focus:outline-none" {...$content("Encrypt")}>
+    <div class="focus:outline-none" {...$content(Tabs.Encrypt)}>
       <Encrypt />
     </div>
 
-    <div class="focus:outline-none" {...$content("Decrypt")}>
+    <div class="focus:outline-none" {...$content(Tabs.Decrypt)}>
       <Decrypt />
     </div>
   </div>
