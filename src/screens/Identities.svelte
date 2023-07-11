@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { dialog } from "@tauri-apps/api";
+  import { dialog, invoke } from "@tauri-apps/api";
   import { useSWR } from "sswr";
   import IdentityForm from "../lib/IdentityForm.svelte";
   import Modal from "../lib/Modal.svelte";
