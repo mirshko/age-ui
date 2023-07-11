@@ -51,6 +51,7 @@ dependencies = [
  "scrypt",
  "sha2",
  "subtle",
+ "web-sys",
  "x25519-dalek",
  "zeroize",
 ]
